@@ -1,6 +1,6 @@
-# vue-template
+# links.jdhillen.com
 
-> Starter project for developing in Vue 3 on top of Vite
+> Linktree clone for custom social media links
 
 ---
 
