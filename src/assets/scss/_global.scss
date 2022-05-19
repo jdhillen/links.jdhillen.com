@@ -20,6 +20,14 @@ body {
   @extend .smooth;
 }
 
+html { 
+  background: url('/src/assets/img/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 a {
   color: #42b983;
   text-decoration: none;
@@ -35,4 +43,14 @@ a {
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+}
+
+// ==|== Center Text ===============================================================================
+.text-center {
+  text-align: center;
+}
+
+// ==|== Make all buttons 100% width of their container ============================================
+button {
+  width: 100%;
 }

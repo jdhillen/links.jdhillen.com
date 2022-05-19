@@ -1,5 +1,6 @@
 // ==|== Imports ===================================================================================
 import { defineStore } from 'pinia';
+import Service from '@/services';
 
 // ==|== Store =====================================================================================
 export const useDefaultStore = defineStore('default', {
@@ -7,21 +8,27 @@ export const useDefaultStore = defineStore('default', {
   // ==|== State ===================================================================================
   state: () => {
     return {
-      count: 0,
+      contact: undefined,
     }
   },
 
   // ==|== Actions =================================================================================
   actions: {
-    increment() {
-      this.count++;
+    async fetchContact() {
+      Service.getContact().then((response) => {
+        this.contact = response.data;
+      })
     }
   },
 
 
   // ==|== Getters =================================================================================
   getters: {
-    doubleCount: (state) => state.count * 2,
+    getPhoto: (state) => {
+      if (state.contact) {
+        return state.contact.photo
+      }
+    }
   },
 
 })

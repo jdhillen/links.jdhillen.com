@@ -1,8 +1,7 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <section class="home">
-    <button>this is a test link</button>
-  </section>
+  <h1 class="text-center">J.D. Hillen</h1>
+  <p class="text-center">Software Engineer @ Garmin.</p>
 </template>
 
 <!--|== Scripts ================================================================================ -->
@@ -11,6 +10,7 @@
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
-.home {
+h1, p {
+  text-shadow: 0px 3px 5px black(0.75);
 }
 </style>

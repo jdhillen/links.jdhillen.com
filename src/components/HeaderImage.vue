@@ -1,28 +1,33 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <main class="app">
-    <section class="container">
-      <div class="row">
-        <div class="twelve columns">
-          <HeaderImage/>
-          <HeaderCopy/>
-        </div>
-      </div>
-      <router-view />
-    </section>
-  </main>
+  <div class="headerImage" :style="bgImage"/>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
+import { computed } from "vue";
 import { useDefaultStore } from '@/store/DefaultStore';
-import HeaderImage from './components/HeaderImage.vue';
-import HeaderCopy from './components/HeaderCopy.vue';
 
 const store = useDefaultStore();
-store.fetchContact();
+
+const bgImage = computed(() => {
+  return `background-image: url('${store.getPhoto}')`
+});
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
+.headerImage {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  margin: 25px auto;
+  background-color: $black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
