@@ -24,16 +24,21 @@ export const useDefaultStore = defineStore('default', {
 
   // ==|== Getters =================================================================================
   getters: {
-    getPhoto: (state) => {
+    getName: (state) => {
       if (state.contact) {
-        return state.contact.photo
+        return state.contact.name
       }
     },
     getTitle: (state) => {
       if (state.contact) {
         return state.contact.title
       }
-    }
+    },
+    getPhoto: (state) => {
+      if (state.contact) {
+        return state.contact.photo
+      }
+    },
   },
 
 })
