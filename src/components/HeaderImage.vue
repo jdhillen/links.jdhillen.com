@@ -1,6 +1,6 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <div class="headerImage" :style="bgImage"/>
+  <div class="headerImage boxShadow" :style="bgImage"/>
 </template>
 
 <!--|== Scripts ================================================================================ -->

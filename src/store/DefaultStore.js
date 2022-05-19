@@ -28,6 +28,11 @@ export const useDefaultStore = defineStore('default', {
       if (state.contact) {
         return state.contact.photo
       }
+    },
+    getTitle: (state) => {
+      if (state.contact) {
+        return state.contact.title
+      }
     }
   },
 

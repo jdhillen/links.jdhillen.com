@@ -1,7 +1,7 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <section class="home">
-    <button>this is a test link</button>
+  <section>
+    <button class="boxShadow">this is a test link</button>
   </section>
 </template>
 
@@ -11,6 +11,4 @@
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
-.home {
-}
 </style>
