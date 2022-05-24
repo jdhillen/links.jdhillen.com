@@ -6,6 +6,7 @@
         <div class="twelve columns">
           <HeaderImage/>
           <HeaderCopy/>
+          <SocialIcons/>
         </div>
       </div>
       <router-view />
@@ -18,9 +19,11 @@
 import { useDefaultStore } from '@/store/DefaultStore';
 import HeaderImage from './components/HeaderImage.vue';
 import HeaderCopy from './components/HeaderCopy.vue';
+import SocialIcons from './components/SocialIcons.vue';
 
 const store = useDefaultStore();
 store.fetchContact();
+store.fetchSocial();
 </script>
 
 <!--|== CSS ==================================================================================== -->

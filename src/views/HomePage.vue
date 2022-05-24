@@ -1,12 +1,15 @@
 <!--|== Template =============================================================================== -->
 <template>
   <section>
-    <button class="boxShadow">this is a test link</button>
+    <a class="button boxShadow" :href="store.getWebsite" target="_blank">Website</a>
   </section>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
+import { useDefaultStore } from '@/store/DefaultStore';
+
+const store = useDefaultStore();
 </script>
 
 <!--|== CSS ==================================================================================== -->

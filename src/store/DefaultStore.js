@@ -9,14 +9,20 @@ export const useDefaultStore = defineStore('default', {
   state: () => {
     return {
       contact: undefined,
+      social: undefined,
     }
   },
 
   // ==|== Actions =================================================================================
   actions: {
-    async fetchContact() {
+    fetchContact() {
       Service.getContact().then((response) => {
         this.contact = response.data;
+      })
+    },
+    fetchSocial() {
+      Service.getSocial().then((response) => {
+        this.social = response.data;
       })
     }
   },
@@ -26,17 +32,27 @@ export const useDefaultStore = defineStore('default', {
   getters: {
     getName: (state) => {
       if (state.contact) {
-        return state.contact.name
+        return state.contact.name;
       }
     },
     getTitle: (state) => {
       if (state.contact) {
-        return state.contact.title
+        return state.contact.title;
       }
     },
     getPhoto: (state) => {
       if (state.contact) {
-        return state.contact.photo
+        return state.contact.photo;
+      }
+    },
+    getEmail: (state) => {
+      if (state.contact) {
+        return state.contact.email;
+      }
+    },
+    getWebsite: (state) => {
+      if (state.contact) {
+        return state.contact.website;
       }
     },
   },

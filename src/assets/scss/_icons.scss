@@ -1,0 +1,45 @@
+// =================================================================================================
+// ---- icons ----
+// =================================================================================================
+
+.icon {
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+
+  &__social {
+    filter: drop-shadow(2px 2px 3px black(0.2));
+  }
+
+  &__github {
+    background-image: url('/src/assets/img/icons/github.svg');
+  }
+  
+  &__linkedin {
+    background-image: url('/src/assets/img/icons/linkedin.svg');
+  }
+
+  &__facebook {
+    background-image: url('/src/assets/img/icons/facebook.svg');
+  }
+
+  &__twitter {
+    background-image: url('/src/assets/img/icons/twitter.svg');
+  }
+
+  &__instagram {
+    background-image: url('/src/assets/img/icons/instagram.svg');
+  }
+
+  &__youtube {
+    background-image: url('/src/assets/img/icons/youtube.svg');
+  }
+
+  &__email {
+    background-image: url('/src/assets/img/icons/email.svg');
+  }
+}

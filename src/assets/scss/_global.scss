@@ -28,11 +28,6 @@ html {
   background-size: cover;
 }
 
-a {
-  color: #42b983;
-  text-decoration: none;
-}
-
 // ==|== Disable Click Events ======================================================================
 .disable-click {
   pointer-events: none;
@@ -51,8 +46,12 @@ a {
 }
 
 // ==|== Make all buttons 100% width of their container ============================================
-button {
+.button {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .boxShadow {
