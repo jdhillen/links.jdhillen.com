@@ -1,71 +1,31 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <section class="app container">
-    <div class="row">
-      <div class="twelve columns">
-        <div id="nav">
-          <router-link :to="{ name: 'Home' }">Home</router-link> |
-          <router-link :to="{ name: 'About' }">About</router-link>
+  <main class="app">
+    <section class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <HeaderImage/>
+          <HeaderCopy/>
+          <SocialIcons/>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <img alt="Vue logo" src="@/assets/img/logo.png" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <p>{{ title }}</p>
-      </div>
-    </div>
-    <router-view />
-  </section>
+      <router-view />
+    </section>
+  </main>
 </template>
 
 <!--|== Scripts ================================================================================ -->
-<script>
-export default {
-  name: 'app',
+<script setup>
+import { useDefaultStore } from '@/store/DefaultStore';
+import HeaderImage from './components/HeaderImage.vue';
+import HeaderCopy from './components/HeaderCopy.vue';
+import SocialIcons from './components/SocialIcons.vue';
 
-  props: {},
-
-  components: {},
-
-  data() {
-    return {
-      title: import.meta.env.VITE_APP_TITLE
-    };
-  },
-
-  beforeCreate() {},
-
-  created() {},
-
-  beforeMount() {},
-
-  mounted() {},
-
-  beforeUpdate() {},
-
-  updated() {},
-
-  beforeUnmount() {},
-
-  unmounted() {},
-
-  computed: {},
-
-  methods: {},
-
-  watch: {}
-};
+const store = useDefaultStore();
+store.fetchContact();
+store.fetchSocial();
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
-.app {
-  text-align: center;
-  margin-top: 50px;
-}
 </style>

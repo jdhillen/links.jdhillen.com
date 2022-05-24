@@ -1,5 +1,6 @@
 // ==|== Imports ===================================================================================
 import { defineStore } from 'pinia';
+import Service from '@/services';
 
 // ==|== Store =====================================================================================
 export const useDefaultStore = defineStore('default', {
@@ -7,21 +8,53 @@ export const useDefaultStore = defineStore('default', {
   // ==|== State ===================================================================================
   state: () => {
     return {
-      count: 0,
+      contact: undefined,
+      social: undefined,
     }
   },
 
   // ==|== Actions =================================================================================
   actions: {
-    increment() {
-      this.count++;
+    fetchContact() {
+      Service.getContact().then((response) => {
+        this.contact = response.data;
+      })
+    },
+    fetchSocial() {
+      Service.getSocial().then((response) => {
+        this.social = response.data;
+      })
     }
   },
 
 
   // ==|== Getters =================================================================================
   getters: {
-    doubleCount: (state) => state.count * 2,
+    getName: (state) => {
+      if (state.contact) {
+        return state.contact.name;
+      }
+    },
+    getTitle: (state) => {
+      if (state.contact) {
+        return state.contact.title;
+      }
+    },
+    getPhoto: (state) => {
+      if (state.contact) {
+        return state.contact.photo;
+      }
+    },
+    getEmail: (state) => {
+      if (state.contact) {
+        return state.contact.email;
+      }
+    },
+    getWebsite: (state) => {
+      if (state.contact) {
+        return state.contact.website;
+      }
+    },
   },
 
 })

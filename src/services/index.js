@@ -3,8 +3,8 @@ import axios from 'axios';
 
 // ==|== Axios Client ==============================================================================
 const apiClient = axios.create({
-  baseURL: `https://www.jdhillen.io/api`,
-  withCredentials: false, // This is the default
+  baseURL: import.meta.env.VITE_APP_API_URL,
+  withCredentials: false,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'
@@ -15,6 +15,17 @@ const apiClient = axios.create({
 // ==|== Export ====================================================================================
 export default {
   getContact() {
-    return apiClient.get('/resume/contact/1/');
+    try {
+      return apiClient.get('/resume/contact/1/');
+    } catch(error) {
+      console.log(error);
+    }
+  },
+  getSocial() {
+    try {
+      return apiClient.get('/links/social/');
+    } catch(error) {
+      console.log(error);
+    }
   }
 };
