@@ -34,6 +34,10 @@ ul {
     display: flex;
     margin: 10px;
 
+    @media screen and (max-width: 400px) {
+      margin: 10px 20px;
+    }
+
     a {
       color: white(0.75);
       transition: 300ms color;
