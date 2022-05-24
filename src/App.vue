@@ -24,6 +24,7 @@ import SocialIcons from './components/SocialIcons.vue';
 const store = useDefaultStore();
 store.fetchContact();
 store.fetchSocial();
+store.fetchLinks();
 </script>
 
 <!--|== CSS ==================================================================================== -->

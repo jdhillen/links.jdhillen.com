@@ -27,5 +27,12 @@ export default {
     } catch(error) {
       console.log(error);
     }
+  },
+  getLinks() {
+    try {
+      return apiClient.get('/links/personal/');
+    } catch(error) {
+      console.log(error);
+    }
   }
 };

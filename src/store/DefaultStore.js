@@ -8,8 +8,9 @@ export const useDefaultStore = defineStore('default', {
   // ==|== State ===================================================================================
   state: () => {
     return {
-      contact: undefined,
-      social: undefined,
+      contact: {},
+      social: {},
+      links: {},
     }
   },
 
@@ -23,6 +24,11 @@ export const useDefaultStore = defineStore('default', {
     fetchSocial() {
       Service.getSocial().then((response) => {
         this.social = response.data;
+      })
+    },
+    fetchLinks() {
+      Service.getLinks().then((response) => {
+        this.links = response.data;
       })
     }
   },
