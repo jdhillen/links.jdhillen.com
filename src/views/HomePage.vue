@@ -15,4 +15,7 @@ const store = useDefaultStore();
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
+section {
+  margin-bottom: 50px;
+}
 </style>
