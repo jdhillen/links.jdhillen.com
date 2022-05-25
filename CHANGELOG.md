@@ -1,4 +1,4 @@
-# [Vue Template](https://github.com/jdhillen/vue-template) - CHANGELOG
+# [links.jdhillen.com](https://github.com/jdhillen/links.jdhillen.com) - CHANGELOG
 
 > All notable changes to this project will be documented in this file.
 
