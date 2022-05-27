@@ -1,14 +1,16 @@
 {
   "name": "links-jdhillen-com",
   "version": "1.0.0",
-  "engines" : {
+  "engines": {
     "npm": "8.3.1",
-    "node" : ">=16.14.0"
+    "node": ">=16.14.0"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format": "npx prettier --check .",
+    "format:write": "npx prettier --write ."
   },
   "dependencies": {
     "axios": "^0.27.2",

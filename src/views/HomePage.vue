@@ -1,8 +1,17 @@
 <!--|== Template =============================================================================== -->
 <template>
   <section>
-    <a class="button boxShadow" :href="store.getWebsite" target="_blank">Website</a>
-    <a class="button boxShadow" v-for="(item, index) in store.links" :key="index" :href="item.url" target="_blank">{{item.name}}</a>
+    <a class="button boxShadow" :href="store.getWebsite" target="_blank"
+      >Website</a
+    >
+    <a
+      class="button boxShadow"
+      v-for="(item, index) in store.links"
+      :key="index"
+      :href="item.url"
+      target="_blank"
+      >{{ item.name }}</a
+    >
   </section>
 </template>
 

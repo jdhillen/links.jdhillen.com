@@ -1,17 +1,17 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <div class="headerImage boxShadow" :style="bgImage"/>
+  <div class="headerImage boxShadow" :style="bgImage" />
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import { useDefaultStore } from '@/store/DefaultStore';
 
 const store = useDefaultStore();
 
 const bgImage = computed(() => {
-  return `background-image: url('${store.getPhoto}')`
+  return `background-image: url('${store.getPhoto}')`;
 });
 </script>
 
@@ -29,8 +29,8 @@ const bgImage = computed(() => {
   background-size: cover;
 
   @media screen and (max-width: 280px) {
-      width: 100px;
-      height: 100px;
-    }
+    width: 100px;
+    height: 100px;
+  }
 }
 </style>
