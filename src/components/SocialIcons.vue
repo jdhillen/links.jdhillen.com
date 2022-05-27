@@ -2,10 +2,19 @@
 <template>
   <ul v-if="store.social">
     <li v-for="item in store.social">
-      <a :href="item.url" target="_blank" :alt="item.name" class="icon icon__social" :class="['icon__' + item.icon]"></a>
+      <a
+        :href="item.url"
+        target="_blank"
+        :alt="item.name"
+        class="icon icon__social"
+        :class="['icon__' + item.icon]"
+      ></a>
     </li>
     <li v-if="store.contact">
-      <a :href="'mailto:' + store.getEmail + '?subject=Hello'" class="icon icon__social icon__email"></a>
+      <a
+        :href="'mailto:' + store.getEmail + '?subject=Hello'"
+        class="icon icon__social icon__email"
+      ></a>
     </li>
   </ul>
 </template>

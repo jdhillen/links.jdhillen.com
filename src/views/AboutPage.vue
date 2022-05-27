@@ -1,6 +1,6 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <section class="about row">
+  <section class="row">
     <div class="twelve columns">
       <h1>About</h1>
       <p>
@@ -45,47 +45,8 @@
 </template>
 
 <!--|== Scripts ================================================================================ -->
-<script>
-
-export default {
-  name: 'about-page',
-
-  props: {},
-
-  components: {
-  },
-
-  data() {
-    return {
-    };
-  },
-
-  beforeCreate() {},
-
-  created() {},
-
-  beforeMount() {},
-
-  mounted() {},
-
-  beforeUpdate() {},
-
-  updated() {},
-
-  beforeUnmount() {},
-
-  unmounted() {},
-
-  computed: {},
-
-  methods: {},
-
-  watch: {}
-};
-</script>
+<!--|== Scripts ================================================================================ -->
+<script setup></script>
 
 <!--|== CSS ==================================================================================== -->
-<style lang="scss" scoped>
-.about {
-}
-</style>
+<style lang="scss"></style>

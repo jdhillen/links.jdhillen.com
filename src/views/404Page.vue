@@ -9,47 +9,7 @@
 </template>
 
 <!--|== Scripts ================================================================================ -->
-<script>
-
-export default {
-  name: 'page-not-found-page',
-
-  props: {},
-
-  components: {
-  },
-
-  data() {
-    return {
-    };
-  },
-
-  beforeCreate() {},
-
-  created() {},
-
-  beforeMount() {},
-
-  mounted() {},
-
-  beforeUpdate() {},
-
-  updated() {},
-
-  beforeUnmount() {},
-
-  unmounted() {},
-
-  computed: {},
-
-  methods: {},
-
-  watch: {}
-};
-</script>
+<script setup></script>
 
 <!--|== CSS ==================================================================================== -->
-<style lang="scss" scoped>
-.page-not-found {
-}
-</style>
+<style lang="scss"></style>

@@ -17,21 +17,21 @@ export default {
   getContact() {
     try {
       return apiClient.get('/resume/contact/1/');
-    } catch(error) {
+    } catch (error) {
       console.log(error);
     }
   },
   getSocial() {
     try {
       return apiClient.get('/links/social/');
-    } catch(error) {
+    } catch (error) {
       console.log(error);
     }
   },
   getLinks() {
     try {
       return apiClient.get('/links/personal/');
-    } catch(error) {
+    } catch (error) {
       console.log(error);
     }
   }
