@@ -4,6 +4,21 @@
 
 ---
 
+## [v1.0.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.1) - 2022-07-14
+
+### Update
+
+- version => v1.0.1
+- pinia => v2.0.16
+- vue => v3.2.37
+- vue-router => v4.1.2
+- @vitejs/plugin-vue => v3.0.0
+- @vue/compiler-sfc => v3.2.37
+- sass => v1.53.0
+- vite => v3.0.0
+
+---
+
 ## [v1.0.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.0) - 2022-05-25
 
 ### Added
