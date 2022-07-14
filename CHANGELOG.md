@@ -4,6 +4,18 @@
 
 ---
 
+## [v1.0.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.2) - 2022-07-14
+
+### Added
+
+- New font: Mundial as my copy and button text
+
+### Update
+
+- version => v1.0.2
+
+---
+
 ## [v1.0.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.1) - 2022-07-14
 
 ### Update

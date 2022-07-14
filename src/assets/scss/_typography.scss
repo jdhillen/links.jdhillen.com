@@ -18,6 +18,45 @@
   src: url('@/assets/fonts/open-sans/open_sans_bold.woff2') format('woff2');
 }
 
+// ==|== Mundial ===================================================================================
+.mundial {
+  font-family: 'mundial', sans-serif;
+  font-style: normal;
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &__hair {
+    font-weight: 100;
+  }
+
+  &__thin {
+    font-weight: 200;
+  }
+
+  &__light {
+    font-weight: 300;
+  }
+
+  &__regular {
+    font-weight: 400;
+  }
+
+  &__demibold {
+    font-weight: 600;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__black {
+    font-weight: 900;
+  } 
+}
+
+
 // ==|== Helper Classes ============================================================================
 .smooth {
   -webkit-text-stroke: 0.35px;
