@@ -16,9 +16,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans Regular';
-  font-size: 14px;
-  font-style: normal;
+  @extend .mundial;
+  @extend .mundial__regular;
   @extend .smooth;
 }
 
@@ -62,7 +61,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .boxShadow {

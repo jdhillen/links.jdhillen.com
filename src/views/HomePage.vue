@@ -27,4 +27,10 @@ const store = useDefaultStore();
 section {
   margin-bottom: 50px;
 }
+.button {
+  @extend .mundial;
+  @extend .mundial__regular;
+  letter-spacing: 0.125rem;
+  font-size: 14px;
+}
 </style>

@@ -12,4 +12,16 @@ const store = useDefaultStore();
 </script>
 
 <!--|== CSS ==================================================================================== -->
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  @extend .mundial;
+  @extend .mundial__regular;
+  letter-spacing: 0.125rem;
+}
+
+p {
+  @extend .mundial;
+  @extend .mundial__thin;
+  letter-spacing: 0.125rem;
+}
+</style>
