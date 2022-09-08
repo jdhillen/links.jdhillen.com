@@ -4,6 +4,25 @@
 
 ---
 
+## [v1.0.3](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.3) - 2022-09-08
+
+### Fixed
+
+- 100% Vertical Height CSS
+
+### Update
+
+- version => v1.0.3
+- pinia => v2.0.22
+- vue => v3.2.39
+- vue-router => v4.1.5
+- @vitejs/plugin-vue => v3.1.0
+- @vue/compiler-sfc => v3.2.39
+- sass => v1.54.9
+- vite => v3.1.0
+
+---
+
 ## [v1.0.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.2) - 2022-07-14
 
 ### Added
