@@ -4,6 +4,16 @@
 
 ---
 
+## [v1.0.4](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.3) - 2022-09-27
+
+### Update
+
+- version => v1.0.4
+- sass => v1.55.0
+- vite => v3.1.3
+
+---
+
 ## [v1.0.3](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.3) - 2022-09-08
 
 ### Fixed
