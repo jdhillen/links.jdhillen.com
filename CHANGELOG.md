@@ -4,6 +4,21 @@
 
 ---
 
+## [v1.0.6](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.6) - 2022-11-22
+
+### Update
+
+- version => v1.0.6
+- axios => v1.2.0
+- pinia => v2.0.25
+- vue => v3.2.45
+- @vitejs/plugin-vue => v3.2.0
+- @vue/compiler-sfc => v3.2.45
+- sass => v1.56.1
+- vite => v3.2.4
+
+---
+
 ## [v1.0.5](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.5) - 2022-11-02
 
 ### Update
