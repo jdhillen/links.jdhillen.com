@@ -17,6 +17,10 @@
 - sass => v1.56.1
 - vite => v3.2.4
 
+### Added
+
+- Added Mastodon to the social icons
+
 ---
 
 ## [v1.0.5](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.5) - 2022-11-02
