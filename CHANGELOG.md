@@ -4,6 +4,20 @@
 
 ---
 
+## [v1.0.7](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.7) - 2022-12-22
+
+### Update
+
+- version => v1.0.7
+- axios => v1.2.1
+- pinia => v2.0.28
+- @vitejs/plugin-vue => v4.0.0
+- sass => v1.57.1
+- vite => v4.0.3
+- Update to footer background color
+
+---
+
 ## [v1.0.6](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.6) - 2022-11-22
 
 ### Update
