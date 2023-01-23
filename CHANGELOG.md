@@ -4,6 +4,18 @@
 
 ---
 
+## [v1.0.8](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.8) - 2022-01-23
+
+### Update
+
+- version => v1.0.8
+- axios => v1.2.3
+- pinia => v2.0.29
+- vite => v4.0.3
+- Update to footer background color
+
+---
+
 ## [v1.0.7](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.7) - 2022-12-22
 
 ### Update
