@@ -31,7 +31,6 @@
   &__copyright {
     text-align: center;
     padding: 25px 0;
-    background-color: $black-med;
 
     &--txt {
       font-family: 'Open Sans Regular';
