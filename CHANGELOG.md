@@ -4,6 +4,14 @@
 
 ---
 
+## [v1.0.9](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.9) - 2022-01-24
+
+### Added
+
+- meta title to the html
+
+---
+
 ## [v1.0.8](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.8) - 2022-01-23
 
 ### Update
