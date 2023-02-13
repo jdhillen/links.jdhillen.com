@@ -9,13 +9,8 @@ const routes = [
     component: () => import('@/views/HomePage.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('@/views/AboutPage.vue')
-  },
-  {
     path: '/:catchAll(.*)',
-    component: () => import('@/views/404Page.vue')
+    component: () => import('@/views/ErrorPage.vue')
   }
 ];
 

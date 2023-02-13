@@ -4,7 +4,26 @@
 
 ---
 
-## [v1.0.9](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.9) - 2022-01-24
+## [v1.0.10](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.10) - 2023-02-13
+
+### Update
+
+- 404Page has been renamed to ErrorPage
+- Version Bump => v1.0.10
+- axios => v1.3.3
+- pinia => v2.0.30
+- vue => v3.2.47
+- @vue/compiler-sfc => v3.2.47
+- sass => v1.58.0
+- vite => v4.1.1
+
+### Removed
+
+- AboutPage.vue has been removed from views and from the router
+
+---
+
+## [v1.0.9](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.9) - 2023-01-24
 
 ### Added
 
@@ -12,7 +31,7 @@
 
 ---
 
-## [v1.0.8](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.8) - 2022-01-23
+## [v1.0.8](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.8) - 2023-01-23
 
 ### Update
 
