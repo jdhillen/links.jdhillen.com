@@ -4,6 +4,17 @@
 
 ---
 
+## [v1.0.11](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.11) - 2023-02-20
+
+### Update
+
+- Version Bump => v1.0.11
+- pinia => v2.0.31
+- sass => v1.58.3
+- vite => v4.1.3
+
+---
+
 ## [v1.0.10](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.10) - 2023-02-13
 
 ### Update
