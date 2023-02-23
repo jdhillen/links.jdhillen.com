@@ -29,7 +29,6 @@ const store = useDefaultStore();
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
 ul {
-  max-width: 500px;
   margin: 0 auto 35px auto;
   padding: 0;
   list-style-type: none;
