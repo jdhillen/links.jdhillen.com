@@ -4,6 +4,21 @@
 
 ---
 
+## [v1.0.12](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.12) - 2023-02-23
+
+### Added
+
+- RSS Icon to social share footer
+
+### Update
+
+- Version Bump => v1.0.12
+- axios => v1.3.4
+- pinia => v2.0.32
+- vite => v4.1.4
+
+---
+
 ## [v1.0.11](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.11) - 2023-02-20
 
 ### Update
