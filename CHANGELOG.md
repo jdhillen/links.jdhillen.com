@@ -4,6 +4,14 @@
 
 ---
 
+## [v1.1.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.1.0) - 2023-02-27
+
+### Update
+
+- Favicons to newly designed ones
+
+---
+
 ## [v1.0.12](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.0.12) - 2023-02-23
 
 ### Added
