@@ -4,6 +4,26 @@
 
 ---
 
+## [v1.1.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.1.1) - 2023-03-20
+
+### Removed
+
+- normalize.scss
+
+### Added
+
+- Eric Meyer's reset.scss
+
+### Update
+
+- Version Bump => v1.1.1
+- pinia => v2.0.33
+- @vitejs/plugin-vue => 4.1.0
+- sass => 1.59.3
+- vite => v4.2.1
+
+---
+
 ## [v1.1.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.1.0) - 2023-02-27
 
 ### Update
