@@ -4,6 +4,19 @@
 
 ---
 
+## [v1.2.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.0) - 2023-04-17
+
+### Update
+
+- Version Bump => v1.2.0
+- node => v18.16.0
+- npm => v9.6.4
+- axios => v1.3.5
+- pinia => v2.0.34
+- sass => 1.62.0
+
+---
+
 ## [v1.1.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.1.1) - 2023-03-20
 
 ### Removed
