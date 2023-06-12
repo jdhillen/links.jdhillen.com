@@ -17,10 +17,6 @@
 - sass => v1.63.3
 - vite => v4.3.9
 
-### Added
-
-- BlueSky Icon to footer
-
 ---
 
 ## [v1.2.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.1) - 2023-05-08
