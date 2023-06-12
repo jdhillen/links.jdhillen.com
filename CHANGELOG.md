@@ -4,6 +4,25 @@
 
 ---
 
+## [v1.2.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.2) - 2023-06-12
+
+### Update
+
+- Version Bump => v1.2.2
+- pinia => v2.1.3
+- vue => v3.34
+- vue-router => v4.2.2
+- @vitejs/plugin-vue => v4.2.3
+- @vue/compiler-sfc => v3.3.4",
+- sass => v1.63.3
+- vite => v4.3.9
+
+### Added
+
+- BlueSky Icon to footer
+
+---
+
 ## [v1.2.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.1) - 2023-05-08
 
 ### Update
