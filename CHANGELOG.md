@@ -4,6 +4,17 @@
 
 ---
 
+## [v1.2.3](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.3) - 2023-07-05
+
+### Update
+
+- Version Bump => v1.2.3
+- pinia => v2.1.4
+- vue-router => v4.2.3
+- sass => v1.63.6
+
+---
+
 ## [v1.2.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.2) - 2023-06-12
 
 ### Update
