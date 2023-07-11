@@ -4,6 +4,20 @@
 
 ---
 
+## [v1.2.4](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.4) - 2023-07-11
+
+### Update
+
+- Version Bump => v1.2.4
+- vue-router => v4.2.4
+- vite => v4.4.3
+
+### Added
+
+- Threads Icon to footer
+
+---
+
 ## [v1.2.3](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.3) - 2023-07-05
 
 ### Update
