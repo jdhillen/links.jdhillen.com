@@ -4,6 +4,24 @@
 
 ---
 
+## [v1.2.5](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.5) - 2023-08-30
+
+### Update
+
+- Version Bump => v1.2.5
+- axios => v1.5.0
+- pinia => v2.1.6
+- @vitejs/plugin-vue => v4.3.4
+- sass => v1.66.1
+- vite => v4.4.9
+
+### Deleted
+
+- Unused Mixins folder (Mixins are deprecated anyway)
+- Unused Filters folder
+
+---
+
 ## [v1.2.4](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.4) - 2023-07-11
 
 ### Update
