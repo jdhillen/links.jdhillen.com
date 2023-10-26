@@ -29,6 +29,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  --myBlur: 0px;  // Variable for GSAP
 }
 
 #app {

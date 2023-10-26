@@ -1,17 +1,36 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <div class="headerImage boxShadow" :style="bgImage" />
+  <div id="headerImg" class="headerImage">
+    <img class="headerImage__img boxShadow" :src="store.getPhoto" alt="Picture of J.D. Hillen"/>
+  </div>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
-import { computed } from 'vue';
+import { onMounted } from 'vue';
 import { useDefaultStore } from '@/store/DefaultStore';
+import { gsap } from 'gsap';
 
 const store = useDefaultStore();
 
-const bgImage = computed(() => {
-  return `background-image: url('${store.getPhoto}')`;
+const animateIn = () => {
+  gsap.set("#headerImg", {
+    autoAlpha: 0,
+    scale: 0.5,
+    "--myBlur": 10,
+  });
+  gsap.to("#headerImg", {
+    delay: 1,
+    duration: 0.5,
+    autoAlpha: 1,
+    scale: 1,
+    "--myBlur": 0,
+    ease: "back.out(1.75)",
+  });
+}
+
+onMounted(() => {
+  animateIn();
 });
 </script>
 
@@ -21,16 +40,18 @@ const bgImage = computed(() => {
   width: 200px;
   height: 200px;
   margin: 25px auto;
-  border: 1px solid $white;
-  border-radius: 50%;
-  background-color: $black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  filter: blur(var(--myBlur));
 
   @media screen and (max-width: 280px) {
     width: 100px;
     height: 100px;
+  }
+
+  &__img {
+    border: 1px solid $white;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
   }
 }
 </style>

@@ -4,6 +4,18 @@
 
 ---
 
+## [v1.3.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.3.0) - 2023-10-26
+
+### Update
+
+- Version Bump => v1.3.0
+
+### Added
+
+- gsap => v3.12.2
+
+---
+
 ## [v1.2.6](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.6) - 2023-10-26
 
 ### Update
