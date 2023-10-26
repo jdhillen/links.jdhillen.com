@@ -4,6 +4,22 @@
 
 ---
 
+## [v1.2.6](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.6) - 2023-10-26
+
+### Update
+
+- Version Bump => v1.2.6
+- axios => v1.5.1
+- pinia => v2.1.7
+- vue => v3.3.7
+- vue-router => v4.2.5
+- @vitejs/plugin-vue => v4.4.0
+- @vue/compiler-sfc => v3.3.7
+- sass => v1.69.5
+- vite => v4.5.0
+
+---
+
 ## [v1.2.5](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.5) - 2023-08-30
 
 ### Update
