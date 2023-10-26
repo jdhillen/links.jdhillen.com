@@ -16,7 +16,7 @@ const store = useDefaultStore();
 const animateIn = () => {
   gsap.set("#headerImg", {
     autoAlpha: 0,
-    scale: 0.5,
+    scale: 0.25,
     "--myBlur": 10,
   });
   gsap.to("#headerImg", {
