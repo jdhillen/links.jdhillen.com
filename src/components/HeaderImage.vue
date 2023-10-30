@@ -25,7 +25,7 @@ const animateIn = () => {
     autoAlpha: 1,
     scale: 1,
     "--myBlur": 0,
-    ease: "back.out(1.75)",
+    ease: "back.out(2.5)",
   });
 }
 

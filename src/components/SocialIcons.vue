@@ -1,6 +1,6 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <ul v-if="store.social">
+  <ul id="icons" v-if="store.social">
     <li v-for="item in store.social">
       <a
         :href="item.url"
@@ -21,9 +21,28 @@
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
+import { onMounted } from 'vue';
 import { useDefaultStore } from '@/store/DefaultStore';
+import { gsap } from 'gsap';
 
 const store = useDefaultStore();
+
+const animateIn = () => {
+  let targets = document.getElementById("icons").children;
+
+  gsap.from(targets, {
+    delay: 2,
+    duration: 0.25,
+    autoAlpha: 0,
+    scale: 0,
+    ease: "back.out(5)",
+    stagger: 0.1,
+  });
+}
+
+onMounted(() => {
+  animateIn();
+});
 </script>
 
 <!--|== CSS ==================================================================================== -->
