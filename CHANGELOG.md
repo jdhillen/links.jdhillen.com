@@ -4,6 +4,23 @@
 
 ---
 
+## [v1.2.7](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.7) - 2024-01-29
+
+### Update
+
+- Version Bump => v1.2.7
+- axios => v1.6.7
+- vue => v3.4.15
+- @vitejs/plugin-vue => v5.0.3
+- @vue/compiler-sfc => v3.4.15
+- sass => v1.70.0
+- vite => v5.0.12
+- Updated Twitter Icon to X Icon
+- Updated BlueSky Icon to fit the new branding
+- Readme with the correct Node engine
+
+---
+
 ## [v1.2.6](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.6) - 2023-10-26
 
 ### Update
