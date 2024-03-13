@@ -12,6 +12,7 @@
     "format:write": "npx prettier --write ."
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.8",
     "axios": "^1.6.7",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
