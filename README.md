@@ -6,7 +6,7 @@
 
 ### Requirements
 
-- [Node.js](https://nodejs.org/en/) - v18.16.0
+- [Node.js](https://nodejs.org/en/) - v20.0.0
 
 ---
 
