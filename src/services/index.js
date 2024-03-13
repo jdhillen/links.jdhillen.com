@@ -10,7 +10,8 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export default {
   async getContact() {
     try {
-      let { data } = await supabase.from('User').select('*');
+      let { data } = await supabase.from('User')
+        .select('*');
       return data;
     } catch (error) {
       console.log(error);
@@ -18,7 +19,9 @@ export default {
   },
   async getSocial() {
     try {
-      let { data } = await supabase.from('Social').select('*').order('order', { ascending: true });
+      let { data } = await supabase.from('Social')
+        .select('*')
+        .order('order', { ascending: true });
       return data;
     } catch (error) {
       console.log(error);
@@ -26,7 +29,10 @@ export default {
   },
   async getLinks() {
     try {
-      let { data } = await supabase.from('Links').select('*').is('enabled', true).order("created_at", { ascending: false });
+      let { data } = await supabase.from('Links')
+        .select('*')
+        .is('enabled', true)
+        .order("created_at", { ascending: false });
       return data;
     } catch (error) {
       console.log(error);

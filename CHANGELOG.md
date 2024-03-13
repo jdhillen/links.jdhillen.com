@@ -4,6 +4,30 @@
 
 ---
 
+## [v2.0.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.0) - 2024-03-13
+
+### Added
+
+- @supabase/supabase-js => v2.39.8
+- Changed over from a custom API over to Supabase
+
+### Update
+
+- Version Bump => v2.0.0
+- Node >=v20.0.0
+- vue => v3.4.21
+- @vitejs/plugin-vue => v5.0.4
+- @vue/compiler-sfc => v3.4.21
+- sass => v1.71.1
+- vite => v5.1.6
+- Readme with the latest version of Node
+
+### Deleted
+
+- axios
+
+---
+
 ## [v1.2.7](https://github.com/jdhillen/links.jdhillen.com/releases/tag/1.2.7) - 2024-01-29
 
 ### Update
