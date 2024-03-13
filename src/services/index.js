@@ -1,36 +1,33 @@
-// ==|== Imports ===================================================================================
-import axios from 'axios';
+// // ==|== Imports ===================================================================================
+import { createClient } from '@supabase/supabase-js';
 
-// ==|== Axios Client ==============================================================================
-const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_APP_API_URL,
-  withCredentials: false,
-  headers: {
-    Accept: 'application/json',
-    'Content-Type': 'application/json'
-  },
-  timeout: 10000
-});
+// // ==|== Supabase Client ==============================================================================
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 // ==|== Export ====================================================================================
 export default {
-  getContact() {
+  async getContact() {
     try {
-      return apiClient.get('/resume/contact/1/');
+      let { data } = await supabase.from('User').select('*');
+      return data;
     } catch (error) {
       console.log(error);
     }
   },
-  getSocial() {
+  async getSocial() {
     try {
-      return apiClient.get('/links/social/');
+      let { data } = await supabase.from('Social').select('*').order('order', { ascending: true });
+      return data;
     } catch (error) {
       console.log(error);
     }
   },
-  getLinks() {
+  async getLinks() {
     try {
-      return apiClient.get('/links/personal/');
+      let { data } = await supabase.from('Links').select('*').is('enabled', true).order("created_at", { ascending: false });
+      return data;
     } catch (error) {
       console.log(error);
     }
