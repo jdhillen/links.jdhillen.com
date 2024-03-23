@@ -4,6 +4,17 @@
 
 ---
 
+## [v2.0.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.1) - 2024-03-22
+
+### Update
+
+- Version Bump => v2.0.1
+- sass => v1.72.0
+- vite => v5.2.3
+- Update to module format
+
+---
+
 ## [v2.0.0](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.0) - 2024-03-13
 
 ### Added
