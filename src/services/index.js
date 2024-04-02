@@ -10,7 +10,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export default {
   async getContact() {
     try {
-      let { data } = await supabase.from('user')
+      let { data } = await supabase.from('profiles')
         .select('*');
       return data;
     } catch (error) {
@@ -19,7 +19,7 @@ export default {
   },
   async getSocial() {
     try {
-      let { data } = await supabase.from('social')
+      let { data } = await supabase.from('socials')
         .select('*')
         .order('order', { ascending: true });
       return data;
