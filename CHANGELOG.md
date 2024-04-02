@@ -4,6 +4,17 @@
 
 ---
 
+## [v2.0.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.2) - 2024-04-02
+
+### Update
+
+- Version Bump => v2.0.2
+- @supabase/supabase-js => v2.41.1
+- vite => v5.2.7
+- Update to contact and socials api calls
+
+---
+
 ## [v2.0.1](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.1) - 2024-03-22
 
 ### Update

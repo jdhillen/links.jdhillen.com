@@ -1,6 +1,6 @@
 {
   "name": "links-jdhillen-com",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -13,7 +13,7 @@
     "format:write": "npx prettier --write ."
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.8",
+    "@supabase/supabase-js": "^2.41.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -22,6 +22,6 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.21",
     "sass": "^1.72.0",
-    "vite": "^5.2.3"
+    "vite": "^5.2.7"
   }
 }
