@@ -21,6 +21,7 @@ export default {
     try {
       let { data } = await supabase.from('socials')
         .select('*')
+        .eq('enabled', true)
         .order('order', { ascending: true });
       return data;
     } catch (error) {
