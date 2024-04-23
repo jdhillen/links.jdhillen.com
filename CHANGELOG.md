@@ -4,6 +4,14 @@
 
 ---
 
+## [v2.0.3](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.3) - 2024-04-23
+
+### Added
+
+- Social icon filtering on enabled.
+
+---
+
 ## [v2.0.2](https://github.com/jdhillen/links.jdhillen.com/releases/tag/2.0.2) - 2024-04-02
 
 ### Update
