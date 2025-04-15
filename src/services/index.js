@@ -10,33 +10,34 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export default {
   async getContact() {
     try {
-      let { data } = await supabase.from('profiles')
-        .select('*');
+      const { data } = await supabase.from('profiles').select('*');
       return data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   },
   async getSocial() {
     try {
-      let { data } = await supabase.from('socials')
+      const { data } = await supabase
+        .from('socials')
         .select('*')
         .eq('enabled', true)
         .order('order', { ascending: true });
       return data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   },
   async getLinks() {
     try {
-      let { data } = await supabase.from('links')
+      const { data } = await supabase
+        .from('links')
         .select('*')
         .is('enabled', true)
-        .order("created_at", { ascending: false });
+        .order('created_at', { ascending: false });
       return data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }
 };

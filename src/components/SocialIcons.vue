@@ -8,52 +8,51 @@
         :alt="item.name"
         class="icon icon__social"
         :class="['icon__' + item.icon]"
-      ></a>
+      />
     </li>
     <li v-if="store.contact">
       <a
         :href="'mailto:' + store.getEmail + '?subject=Hello'"
         class="icon icon__social icon__email"
-      ></a>
+      />
     </li>
   </ul>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
-import { useDefaultStore } from '@/store/DefaultStore';
+  import { useDefaultStore } from '@/store/DefaultStore';
 
-const store = useDefaultStore();
+  const store = useDefaultStore();
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
-ul {
-  margin: 0 auto 35px auto;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  li {
+  ul {
     display: flex;
-    margin: 10px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto 35px;
+    list-style-type: none;
 
-    @media screen and (max-width: 400px) {
-      margin: 10px 20px;
-    }
+    li {
+      display: flex;
+      margin: 10px;
 
-    a {
-      color: white(0.75);
-      transition: 300ms color;
+      @media screen and (width <= 400px) {
+        margin: 10px 20px;
+      }
 
-      &:hover {
-        color: $white;
+      a {
+        color: rgba(255, 255, 255, 0.75);
+        transition: 300ms color;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
-}
 </style>

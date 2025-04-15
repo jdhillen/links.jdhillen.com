@@ -17,24 +17,24 @@
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
-import { useDefaultStore } from '@/store/DefaultStore';
-import HeaderImage from './components/HeaderImage.vue';
-import HeaderCopy from './components/HeaderCopy.vue';
-import SocialIcons from './components/SocialIcons.vue';
-import SiteFooter from './components/SiteFooter.vue';
+  import HeaderCopy from '@/components/HeaderCopy.vue';
+  import HeaderImage from '@/components/HeaderImage.vue';
+  import SiteFooter from '@/components/SiteFooter.vue';
+  import SocialIcons from '@/components/SocialIcons.vue';
+  import { useDefaultStore } from '@/store/DefaultStore';
 
-const store = useDefaultStore();
-store.fetchContact();
-store.fetchSocial();
-store.fetchLinks();
+  const store = useDefaultStore();
+  store.fetchContact();
+  store.fetchSocial();
+  store.fetchLinks();
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
-.app {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
+  .app {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+  }
 </style>

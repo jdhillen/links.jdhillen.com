@@ -2,12 +2,25 @@
 // ---- Main ----
 // =================================================================================================
 
-// ==|== Vendor Imports ============================================================================
-@import 'vendor/reset';
-@import 'vendor/skeleton';
+// Main SCSS file for the application
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:color';
 
-// ==|== Custom Imports ============================================================================
-@import 'colors';
-@import 'typography';
-@import 'global';
-@import 'icons';
+// Import vendor styles next
+@use 'vendor/reset' as *;
+@use 'vendor/skeleton' as *;
+
+// Import all partials
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'global' as *;
+@use 'icons' as *;
+
+// Forward all partials
+@forward 'vendor/reset';
+@forward 'vendor/skeleton';
+@forward 'colors';
+@forward 'typography';
+@forward 'global';
+@forward 'icons';

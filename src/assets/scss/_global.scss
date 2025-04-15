@@ -2,8 +2,8 @@
 // ---- Globals ----
 // =================================================================================================
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
   -webkit-user-drag: none;
   outline: none;
@@ -11,31 +11,29 @@
 
 html,
 body {
+  box-sizing: border-box;
+  display: block;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  display: block;
   overflow: auto;
-  @extend .mundial;
-  @extend .mundial__regular;
-  @extend .smooth;
+  
+  font-family: 'Mundial', sans-serif;
+  font-weight: 400;
 }
 
 html {
   background: url('/src/assets/img/bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 #app {
-  height: auto !important;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  height: auto !important;
+  min-height: 100%;
 }
 
 .page {
@@ -50,7 +48,7 @@ html {
 
 // ==|== Disable Tap Highlight======================================================================
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -61,18 +59,18 @@ html {
 
 // ==|== Make all buttons 100% width of their container ============================================
 .button {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-bottom: 2.5rem;
 }
 
-.boxShadow {
-  box-shadow: 2px 3px 15px black(0.5);
+.box-shadow {
+  box-shadow: 2px 3px 15px rgb(0 0 0 / 50%);
 }
 
-.textShadow {
-  text-shadow: 0px 3px 5px black(0.75);
+.text-shadow {
+  text-shadow: 0 3px 5px rgb(0 0 0 / 75%);
 }

@@ -1,17 +1,16 @@
 // ==|== Imports ===================================================================================
 import { defineStore } from 'pinia';
+
 import Service from '@/services';
 
 // ==|== Store =====================================================================================
 export const useDefaultStore = defineStore('default', {
   // ==|== State ===================================================================================
-  state: () => {
-    return {
+  state: () => ({
       contact: [],
       social: [],
       links: []
-    };
-  },
+    }),
 
   // ==|== Actions =================================================================================
   actions: {
@@ -27,7 +26,6 @@ export const useDefaultStore = defineStore('default', {
     },
     fetchLinks() {
       Service.getLinks().then((response) => {
-        console.log(response);
         this.links = response;
       });
     }
