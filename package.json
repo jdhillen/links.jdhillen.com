@@ -9,8 +9,10 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "format": "npx prettier --check .",
-    "format:write": "npx prettier --write .",
+    "stylelint": "stylelint \"**/*.{vue,css,scss}\" --allow-empty-input",
+    "stylelint:fix": "stylelint \"**/*.{vue,css,scss}\" --fix --allow-empty-input",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "commit": "cz",
     "semantic-release": "semantic-release"
   },
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "@jdhillen/release-config": "^2.0.0",
+    "@jdhillen/stylelint-config": "^2.0.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.21",
     "sass": "^1.72.0",

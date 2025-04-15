@@ -19,8 +19,16 @@
 }
 
 // ==|== Mundial ===================================================================================
+@font-face {
+  font-family: 'Mundial';
+  src: local('Mundial');
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+// Mundial Helper Classes
 .mundial {
-  font-family: 'mundial', sans-serif;
+  font-family: 'Mundial', sans-serif;
   font-style: normal;
 
   &--italic {
@@ -53,13 +61,12 @@
 
   &__black {
     font-weight: 900;
-  } 
+  }
 }
-
 
 // ==|== Helper Classes ============================================================================
 .smooth {
   -webkit-text-stroke: 0.35px;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
 }

@@ -5,14 +5,14 @@
 .icon {
   position: relative;
   display: inline-block;
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 35px;
-  height: 35px;
 
   &__social {
-    filter: drop-shadow(2px 2px 3px black(0.2));
+    filter: drop-shadow(2px 2px 3px rgb(0 0 0 / 20%));
   }
 
   &__github {
@@ -68,10 +68,10 @@
   }
 
   &__vue {
-    width: 12px;
-    height: 10px;
     top: 2px;
     right: 2px;
+    width: 12px;
+    height: 10px;
     background-image: url('/src/assets/img/icons/vue.svg');
   }
 }

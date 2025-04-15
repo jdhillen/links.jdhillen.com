@@ -10,8 +10,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export default {
   async getContact() {
     try {
-      let { data } = await supabase.from('profiles')
-        .select('*');
+      let { data } = await supabase.from('profiles').select('*');
       return data;
     } catch (error) {
       console.log(error);
@@ -19,7 +18,8 @@ export default {
   },
   async getSocial() {
     try {
-      let { data } = await supabase.from('socials')
+      let { data } = await supabase
+        .from('socials')
         .select('*')
         .eq('enabled', true)
         .order('order', { ascending: true });
@@ -30,10 +30,11 @@ export default {
   },
   async getLinks() {
     try {
-      let { data } = await supabase.from('links')
+      let { data } = await supabase
+        .from('links')
         .select('*')
         .is('enabled', true)
-        .order("created_at", { ascending: false });
+        .order('created_at', { ascending: false });
       return data;
     } catch (error) {
       console.log(error);

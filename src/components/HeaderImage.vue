@@ -1,36 +1,39 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <div class="headerImage boxShadow" :style="bgImage" />
+  <div
+    class="header-image box-shadow"
+    :style="bgImage"
+  />
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
-import { computed } from 'vue';
-import { useDefaultStore } from '@/store/DefaultStore';
+  import { computed } from 'vue';
+  import { useDefaultStore } from '@/store/DefaultStore';
 
-const store = useDefaultStore();
+  const store = useDefaultStore();
 
-const bgImage = computed(() => {
-  return `background-image: url('${store.getPhoto}')`;
-});
+  const bgImage = computed(() => {
+    return `background-image: url('${store.getPhoto}')`;
+  });
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
-.headerImage {
-  width: 200px;
-  height: 200px;
-  margin: 25px auto;
-  border: 1px solid $white;
-  border-radius: 50%;
-  background-color: $black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .header-image {
+    width: 200px;
+    height: 200px;
+    margin: 25px auto;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #fff;
+    border-radius: 50%;
 
-  @media screen and (max-width: 280px) {
-    width: 100px;
-    height: 100px;
+    @media screen and (width <= 280px) {
+      width: 100px;
+      height: 100px;
+    }
   }
-}
 </style>

@@ -27,7 +27,6 @@ export const useDefaultStore = defineStore('default', {
     },
     fetchLinks() {
       Service.getLinks().then((response) => {
-        console.log(response);
         this.links = response;
       });
     }
