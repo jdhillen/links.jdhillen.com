@@ -1,3 +1,5 @@
 export default {
-  extends: '@jdhillen/release-config'
+  extends: '@jdhillen/release-config',
+  branches: ['main'],
+  tagFormat: '${version}'
 };
