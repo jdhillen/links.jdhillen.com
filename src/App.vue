@@ -17,11 +17,11 @@
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
+  import HeaderCopy from '@/components/HeaderCopy.vue';
+  import HeaderImage from '@/components/HeaderImage.vue';
+  import SiteFooter from '@/components/SiteFooter.vue';
+  import SocialIcons from '@/components/SocialIcons.vue';
   import { useDefaultStore } from '@/store/DefaultStore';
-  import HeaderImage from './components/HeaderImage.vue';
-  import HeaderCopy from './components/HeaderCopy.vue';
-  import SocialIcons from './components/SocialIcons.vue';
-  import SiteFooter from './components/SiteFooter.vue';
 
   const store = useDefaultStore();
   store.fetchContact();

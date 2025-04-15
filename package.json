@@ -14,7 +14,9 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "commit": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "lint": "eslint --config eslint.config.js .",
+    "lint:fix": "eslint --fix --config eslint.config.js ."
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.41.1",
@@ -23,6 +25,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@jdhillen/eslint-config": "^2.0.4",
     "@jdhillen/release-config": "^2.0.0",
     "@jdhillen/stylelint-config": "^2.0.1",
     "@vitejs/plugin-vue": "^5.0.4",

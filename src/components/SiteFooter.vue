@@ -11,7 +11,7 @@
                 href="https://vuejs.org/"
                 target="_blank"
               >
-                <div class="icon icon__vue"></div>
+                <div class="icon icon__vue"/>
               </a>
               by J.D. Hillen
             </div>

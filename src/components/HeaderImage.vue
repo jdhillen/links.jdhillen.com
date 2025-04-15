@@ -9,13 +9,12 @@
 <!--|== Scripts ================================================================================ -->
 <script setup>
   import { computed } from 'vue';
+
   import { useDefaultStore } from '@/store/DefaultStore';
 
   const store = useDefaultStore();
 
-  const bgImage = computed(() => {
-    return `background-image: url('${store.getPhoto}')`;
-  });
+  const bgImage = computed(() => `background-image: url('${store.getPhoto}')`);
 </script>
 
 <!--|== CSS ==================================================================================== -->

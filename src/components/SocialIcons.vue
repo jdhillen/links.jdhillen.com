@@ -8,13 +8,13 @@
         :alt="item.name"
         class="icon icon__social"
         :class="['icon__' + item.icon]"
-      ></a>
+      />
     </li>
     <li v-if="store.contact">
       <a
         :href="'mailto:' + store.getEmail + '?subject=Hello'"
         class="icon icon__social icon__email"
-      ></a>
+      />
     </li>
   </ul>
 </template>
