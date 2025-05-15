@@ -5,7 +5,13 @@
       class="button box-shadow"
       :href="store.getWebsite"
       target="_blank"
-      >Website</a
+      >🌐 Website</a
+    >
+    <a
+      class="button box-shadow"
+      :href="store.getScheduler"
+      target="_blank"
+      >💬 Grab a Time to Talk</a
     >
     <a
       class="button box-shadow"
@@ -28,6 +34,9 @@
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
   }
 
@@ -36,5 +45,6 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.125rem;
+    max-width: 500px;
   }
 </style>
