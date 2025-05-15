@@ -5,7 +5,13 @@
       class="button box-shadow"
       :href="store.getWebsite"
       target="_blank"
-      >Website</a
+      >🌐 Website</a
+    >
+    <a
+      class="button box-shadow"
+      :href="store.getScheduler"
+      target="_blank"
+      >💬 Grab a Time to Talk</a
     >
     <a
       class="button box-shadow"

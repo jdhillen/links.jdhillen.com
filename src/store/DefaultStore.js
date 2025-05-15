@@ -73,6 +73,7 @@ export const useDefaultStore = defineStore('default', () => {
   const getPhoto = computed(() => contact.value?.photo || '');
   const getEmail = computed(() => contact.value?.email || '');
   const getWebsite = computed(() => contact.value?.website || '');
+  const getScheduler = computed(() => contact.value?.schedule || '');
   
   const isLoading = computed(() => 
     loading.value.contact || loading.value.social || loading.value.links
@@ -96,6 +97,7 @@ export const useDefaultStore = defineStore('default', () => {
     getPhoto,
     getEmail,
     getWebsite,
+    getScheduler,
     isLoading
   };
 });
