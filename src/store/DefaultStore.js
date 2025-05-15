@@ -70,6 +70,7 @@ export const useDefaultStore = defineStore('default', () => {
   // ==|== Getters =================================================================================
   const getName = computed(() => contact.value?.name || '');
   const getTitle = computed(() => contact.value?.title || '');
+  const getCompany = computed(() => contact.value?.company || '');
   const getPhoto = computed(() => contact.value?.photo || '');
   const getEmail = computed(() => contact.value?.email || '');
   const getWebsite = computed(() => contact.value?.website || '');
@@ -94,6 +95,7 @@ export const useDefaultStore = defineStore('default', () => {
     // Getters
     getName,
     getTitle,
+    getCompany,
     getPhoto,
     getEmail,
     getWebsite,
